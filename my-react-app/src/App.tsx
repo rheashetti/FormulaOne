@@ -2,6 +2,7 @@ import './App.css'
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Blog from '../components/blog'
+import ChatBot from '../components/chatbot'
 function App() {
 
   return (
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         {/*</Routes><Route path="/" element={<Home />} />*/}
         <Route path="/blog" element={<Blog />} />
+        <Route path="/chatbot" element={<ChatBot />} />
       </Routes>
     </Router>
   );
