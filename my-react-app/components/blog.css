@@ -1,0 +1,32 @@
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.most-recent-recap {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 800px;
+    padding: 1rem;
+    background-color: lightgrey;
+    border-radius: 8px;
+}
+
+.recaps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 800px;
+    width: 105%;
+}
+
+.recap-card {
+    padding: 1rem;
+    background-color: lightgrey;
+    border-radius: 8px;
+    text-align: center;
+}
