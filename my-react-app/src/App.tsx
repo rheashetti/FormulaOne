@@ -1,24 +1,27 @@
 import './App.css'
-
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import Blog from '../components/blog'
 function App() {
 
   return (
-    <>
+    <Router>
       <div className = "navBar">
         <h1>Formula One Hub</h1>
         <div className = "navBar-links">
-          <a href = "#home">Home</a>
-          <a href = "#blog">Race Recaps</a>
-          <a href = "#chabot">Formula 101</a>
-          <a href = "#drivers">Driver Performance</a>
-          <a href = "#pitstop">Pit Stop Performance</a>
+          <Link to="/">Home</Link>
+          <Link to="/blog">Race Recaps</Link>
+          <Link to="/chatbot">Formula 101</Link>
+          <Link to="/drivers">Driver Performance</Link>
+          <Link to="/pitstop">Pit Stop Simulator</Link>
         </div>
       </div>
-      <div className = "home">
-        <p>Welcome to the Formula One Hub! This is your one stop shop for all things Formula One.</p>
-      </div>
-    </>
-  )
+      <Routes>
+        {/*</Routes><Route path="/" element={<Home />} />*/}
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
