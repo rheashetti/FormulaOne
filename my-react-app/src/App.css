@@ -1,6 +1,8 @@
 #root {
   margin: 0 auto;
   text-align: center;
+  padding:15%;
+  width:100%;
 }
 
 .navBar {
@@ -10,7 +12,7 @@
   padding: 0.5em;
   height: 15%;
   width: 100%;
-  background-color: #b1c8ffd0;
+  background-color: hsl(222, 100%, 85%);
   display: flex;
   justify-content: space-between;
   align-items: center;

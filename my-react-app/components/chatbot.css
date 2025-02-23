@@ -4,12 +4,16 @@
     align-items: center;
     justify-content: center;
     height: 80vh;
-    background-color: #A3D8FF;
+    max-width: 700px;
+    background-color: hsl(222, 100%, 85%);
+    border-radius: 10px;
+    margin: 0 auto;
   }
   
   .chatbox {
-    width: 80%;
-    max-width: 500px;
+    width: 87%;
+    display: flex;
+    flex-direction: column;
     height: 60vh;
     overflow-y: auto;
     padding: 10px;
@@ -21,24 +25,27 @@
   .message {
     padding: 8px 12px;
     border-radius: 5px;
-    margin: 5px 0;
+    margin: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
   }
   
   .user {
-    background-color: #FFB3B3;
+    background-color: hsl(222, 85%, 92%);
     align-self: flex-end;
     text-align: right;
   }
   
   .bot {
-    background-color: #A9E8D3;
+    background-color: lightgrey;
     align-self: flex-start;
     text-align: left;
   }
   
   .input-container {
     display: flex;
-    margin-top: 10px;
+    margin-top: 20px;
+    width: 90%
   }
   
   input {
@@ -50,6 +57,7 @@
   
   button {
     padding: 10px;
+    margin-left: 10px;
     background-color: #FFB3B3; 
     border: none;
     cursor: pointer;
