@@ -6,15 +6,22 @@
 }
 
 .most-recent-recap {
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
     width: 100%;
+    height: 300px;
     max-width: 800px;
     padding: 1rem;
-    background-color: lightgrey;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom : 1rem;
+}
+
+.most-recent-recap img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     border-radius: 8px;
 }
+
 
 .recaps-grid {
     display: grid;
@@ -25,8 +32,13 @@
 }
 
 .recap-card {
-    padding: 1rem;
     background-color: lightgrey;
     border-radius: 8px;
     text-align: center;
+}
+
+.recap-card img{
+    width : 100%;
+    height: 100%;
+    border-radius: 8px;
 }
